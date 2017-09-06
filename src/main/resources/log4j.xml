@@ -37,7 +37,7 @@
             <!-- 设置日志输出的最大级别 -->
             <param name="LevelMax" value="ERROR"/>
             <!-- 设置日志输出的xxx，默认是false -->
-            <param name="AcceptOnMatch" value="true" />
+            <param name="AcceptOnMatch" value="false" />
         </filter>
     </appender>
 
