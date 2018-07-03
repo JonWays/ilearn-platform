@@ -23,6 +23,7 @@ public class UserController
     @RequestMapping("/showUser")
     public String toIndex(HttpServletRequest request, Model model)
     {
+        //jhkasd
         int userId = Integer.parseInt(request.getParameter("id"));
         UserInfo userInfo = this.userService.getUserById(userId);
         model.addAttribute("user", userInfo);
