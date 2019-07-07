@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>footer Fix</title>
+    <meta charset="utf-8">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body, .wrap{
+            height: 100%;
+        }
+        .head-head {
+            height: 60px;
+            background:blue;
+            position: fixed;
+            width: 100%;
+        }
+        .wrap {
+            height:auto;
+            min-height: calc(100% - 60px);
+            background-image: url("../pic/authbackground.jpg");
+            background-size: cover;
+        }
+        .main {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            height: 120px;
+            background: maroon;
+        }
+        .content {
+            background: #fff;
+            background-color: #fff;
+            color: #C1C1C1;
+            font-size: 14px;
+            border-color: rgba(228,228,228,1);
+            border-radius: 0;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+        }
+        .footer {
+            position:relative;
+            clear:both;
+            height: 60px;
+            background: maroon;
+        }
+        .clearfix:after {
+            content:'';
+            display: block;
+            height: 60px;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix:before {
+            content:'';
+            display: block;
+            height: 120px;
+            clear: both;
+            visibility: hidden;
+        }
+
+    </style>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script>
+        function addheight() {
+            $("#auto").css("display","block");
+        }
+        function add200() {
+            $("#auto").css("height","200px");
+        }
+        function add300() {
+            $("#auto").css("height","300px");
+        }
+        function add500() {
+            $("#auto").css("height","500px");
+        }
+        function add800() {
+            $("#auto").css("height","800px");
+        }
+        function delheight() {
+            $("#auto").css("display","none");
+        }
+    </script>
+</head>
+<body>
+<div class="head-head">head-head</div>
+<div class="wrap">
+    <div class="main clearfix">
+        <!--<div class="header">head</div>-->
+        <div class="content">
+            1</br>content</br>2
+            <button onclick="addheight()">add</button>
+            <button onclick="delheight()">del</button>
+            <button onclick="add200()">add200</button>
+            <button onclick="add300()">add300</button>
+            <button onclick="add500()">add500</button>
+            <button onclick="add800()">add800</button>
+            <div id="auto" style="height: 100px;display: none">很多东西</div>
+        </div>
+    </div>
+</div>
+<div class="footer">footer</div>
+</body>
+</html>

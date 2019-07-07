@@ -1,0 +1,415 @@
+/*----------------------------------banner---------------------------------*/
+#banner {
+    background-color: #252B3A;
+    position: fixed;
+    width: 100%;
+    min-width: 600px;
+    height: 60px;
+}
+
+#banner .widthLimit {
+    max-width: inherit;
+    padding: 0 20px;
+}
+
+#bannerQuickLink a {
+    margin-right: 16px;
+}
+.homepageLink {
+    color: #A0A2A8;
+}
+
+#languageSwitch {
+    position: relative;
+    height: 60px;
+    color: #A0A2A8;
+}
+
+#bannerQuickLink {
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+    font-size: 14px;
+}
+
+/*----------------------------------content---------------------------------*/
+.contentBackground {
+    background-image: url("../pic/authbackground.jpg");
+    background-size: cover;
+}
+
+#content {
+    height: auto;
+    min-height: calc(100% - 70px);
+    min-width: 1200px;
+}
+
+#content:after, #content:before {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+#content .widthLimit {
+    width: 600px;
+}
+
+#registerForm {
+    background-color: #fff;
+    color: #C1C1C1;
+    font-size: 14px;
+    border-color: rgba(228,228,228,1);
+    border-radius: 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+}
+
+#registerForm > ul > li {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.registerTypeDiv {
+    font-style: normal;
+    text-align: center;
+    font-size: 24px;
+    color: #252b3a;
+    letter-spacing: 0;
+    padding: 30px 0;
+}
+
+.inputInfo {
+    height: 40px!important;;
+    width: 430px;
+    margin-top: 20px;
+    border:1px solid #a0a2a8;
+}
+
+.getCode {
+    background-color: #F66F6A;
+    border:1px solid #F66F6A;
+    border-radius: 2px;
+    color: #fff;
+    height: 40px!important;;
+    width: 140px;
+    margin-top: 20px;
+    float: right;
+    cursor:pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.getCodeOn {
+    background-color: #CCC;
+    border:1px solid #a0a2a8;
+    color: #252b3a;
+    cursor: not-allowed;
+}
+
+.area_code {
+    width: 120px;
+    background: #fff;
+    border: 1px solid #a0a2a8;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #252b3a;
+    letter-spacing: 0;
+    padding-left: 8px;
+    float: left;
+}
+
+.submitBtn {
+    width: 430px;
+    height: 40px;
+    background-color: #F66F6A;
+    border: 1px solid #F66F6A;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.btnDisabled {
+    background-color: #CCC;
+    border: 1px solid #CCC;
+    cursor: default;
+}
+
+.triangle_down {
+    display: inline-block;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #39f;
+    border-right: 5px solid transparent;
+    border-bottom-width: 0;
+    position: relative;
+    top: -2px;
+}
+
+.learn_more {
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+}
+
+.errorInfo {
+    line-height: 40px;
+    color: red;
+}
+
+.errorInfo img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+/*----------------------------------common---------------------------------*/
+#footer {
+    background: #252b3a;
+    color: #999;
+}
+
+.footer-copyright-wrapper {
+    max-width: 1200px;
+    padding: 15px 10px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-copyright {
+    float: left;
+    font-size: 0;
+}
+
+.footer-copyright span, .footer-copyright a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-law {
+    float: right;
+    overflow: hidden;
+}
+
+.footer-law > li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-law > li + li:before {
+    content: "|";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-link {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.footer-record {
+    clear: both;
+    font-size: 12px;
+}
+
+.footer-record > a:hover{
+    color: #ffffff;
+}
+
+.footer-icon-record2 {
+    background-image: url("../pic/footer-a7.png");
+}
+
+@media (max-width: 1280px) {
+    .footer-law, .footer-copyright, .footer-record {
+        text-align: center;
+        float: inherit;
+    }
+}
+
+/*----------------------------------common---------------------------------*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #F0F2F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #bfc3c6;
+}
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #F0F2F5;
+}
+
+*, body, html {
+    margin: 0;
+    padding: 0;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+}
+
+body, html {
+    height: 100%;
+    min-width: 1280px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei",SimSun,sans-serif;
+}
+
+a {
+    text-decoration: blink;
+}
+
+a {
+    background-color: transparent;
+}
+
+div, ul, ol, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+p, ul, li, h1, h2, h3, h4, h5, h6, dl, dd, a {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.widthLimit {
+    margin: 0 auto;
+}
+
+.clearfix:before {
+    content:'';
+    display: block;
+    height: 120px;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    content:'';
+    display: block;
+    height: 60px;
+    clear: both;
+    visibility: hidden;
+}
+
+ul {
+     list-style: none;
+}
+
+input[ti-text], input[ti-password] {
+    -moz-box-shadow: 0 1px 1px 0 #f6f6f6 inset;
+    -webkit-box-shadow: 0 1px 1px 0 #f6f6f6 inset;
+    box-shadow: 0 1px 1px 0 #f6f6f6 inset;
+    border: 1px solid #a0a2a8;
+    height: 32px;
+    line-height: normal;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+/**
+ * Checkbox Five
+ */
+.checkboxDiv {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/**
+ * Create the box for the checkbox
+ */
+.checkboxDiv label {
+    cursor: pointer;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    border:1px solid #ddd;
+    border-radius: 2px;
+}
+
+/**
+ * Display the tick inside the checkbox
+ */
+.checkboxDiv label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 2px;
+    left: 1px;
+    border: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type=checkbox]:not(:disabled):checked + label {
+    border-color: #3399ff;
+    background-color: #3399ff;
+    color: #fff;
+    outline: none;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.checkboxDiv input[type=checkbox]:checked + label:after {
+    opacity: 1;
+    border-color: #ffffff;
+    color: #fff;
+    outline: none;
+}

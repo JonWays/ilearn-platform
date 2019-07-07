@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/myCanvas.js"></script>
+    <link href="../css/myCanvas.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<p>把鼠标悬停在下面的矩形上可以看到坐标：</p>
+
+<div id="coordiv" style="float:left;width:199px;height:99px;border:1px solid #c3c3c3"
+     onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates()"></div>
+<br/>
+<br/>
+<br/>
+<div id="xycoordinates"></div>
+</body>
+</html>
